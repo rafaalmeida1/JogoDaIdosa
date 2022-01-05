@@ -13,7 +13,9 @@
 <body>
     <h1>Jogo de velha</h1>
     
-    <div class="stage">
+    <h3>Em Andamento</h3>
+    
+    <div id="cube" class="stage">
         <div>
             <div id="0" class="square"></div>
             <div id="1" class="square"></div>
@@ -31,8 +33,13 @@
         </div>
     </div>
 
+    
+    <h4>👽:<span id="alien"> 0</span></h4>
+    <h4>☠️:<span id="skull"> 0</span></h4>
 
+    
     <footer>
+        <input id="restart" type="button" value="Novo Jogo" onclick="resetGame(this)">
         <p>Desenvolvido por: <a href="https://github.com/rafaalmeida1">Rafael Almeida</a></p>
     </footer>
     
