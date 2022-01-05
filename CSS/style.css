@@ -1,0 +1,73 @@
+body{
+    background-color: black;
+    text-align: center;
+}
+
+@keyframes entry {
+    from{transform: scale(0)}
+    to{transform: scale(1)}
+}
+
+@keyframes colors {
+    0%{color: rgb(0, 126, 10)}
+    25%{color: rgb(89, 192, 98)}
+    50%{color: rgb(0, 126, 10)}
+    75%{color: rgb(89, 192, 98)} 
+    100%{color: rgb(0, 126, 10)}
+}
+
+@keyframes shadowColor {
+    0%{box-shadow: 0px 0px 0px rgb(0, 126, 10)}
+    25%{box-shadow: 3px 3px 5px rgb(89, 192, 98)}
+    50%{box-shadow: 0px 0px 0px rgb(0, 126, 10)}
+    75%{box-shadow: 3px 3px 5px rgb(89, 192, 98)} 
+    100%{box-shadow: 0px 0px 0px rgb(0, 126, 10)}
+}
+
+h1 {
+    color: rgb(21, 148, 21);
+    font-size: 50px;
+    font-family: 'Bebas Neue', cursive;
+    text-shadow: 3px 3px 5px rgba(89, 192, 98, 0.5);
+    animation-name: colors;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.stage {
+    animation-name: entry;
+    animation-duration: 0.8s;
+}
+
+.square {
+    width: 100px;
+    height: 100px; 
+    border: 1px solid rgb(21, 148, 21);
+    border-radius: 10px;
+    display: inline-block;
+    animation-name: shadowColor;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 0.3s;
+}
+
+.square:hover {
+    background-color: rgb(10, 209, 10);
+    box-shadow: 4px 4px 2px rgba(10, 209, 10, 0.5);
+}
+
+footer > p {
+    color: rgb(21, 148, 21);
+    font-size: 20px;
+    font-family: 'Bebas Neue', cursive;
+    text-decoration: none;
+    animation-name: colors;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+
+/* ☠️ */
+/* 👽 */
+
